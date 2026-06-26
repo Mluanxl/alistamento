@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+}
+
+/* HEADER */
+
+header{
+
+    height:75px;
+    background:#355f2d;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+}
+
+.logo{
+
+    display:flex;
+    gap:15px;
+    align-items:center;
+
+}
+
+nav{
+
+    display:flex;
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+/* CONSULTA */
+
+.container{
+
+    max-width:1200px;
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+}
+
+.consulta{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.consulta h1{
+
+    color:#355f2d;
+    margin-bottom:15px;
+
+}
+
+.consulta p{
+
+    margin-bottom:25px;
+
+    color:#666;
+
+}
+
+.pesquisa{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+input{
+
+    height:50px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    padding-left:15px;
+
+}
+
+button{
+
+    height:50px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#355f2d;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+.certificado{
+
+    background:#d8ef9e;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.icone{
+
+    font-size:45px;
+
+    color:#355f2d;
+
+    margin-bottom:20px;
+
+}
+
+.certificado h2{
+
+    color:#355f2d;
+
+    margin-bottom:15px;
+
+}
+
+.certificado p{
+
+    margin-bottom:20px;
+
+}
+
+.certificado a{
+
+    color:#355f2d;
+
+    font-weight:bold;
+
+}
+
+/* HISTÓRICO */
+
+.historico{
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+}
+
+.titulo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+}
+
+.card i{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.verde{
+
+    color:#7ab730;
+
+}
+
+.amarelo{
+
+    color:#ff9800;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#355f2d;
+
+}
+
+.card p{
+
+    color:#555;
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+
+}
+
+/* BANNER */
+
+.banner{
+
+    max-width:1200px;
+
+    height:280px;
+
+    margin:50px auto;
+
+    border-radius:15px;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+
+    url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=1500");
+
+    background-size:cover;
+
+    display:flex;
+
+    align-items:flex-end;
+
+}
+
+.texto{
+
+    color:white;
+
+    padding:40px;
+
+}
+
+.texto h2{
+
+    font-size:38px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#ececec;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:40px;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+.container{
+
+    grid-template-columns:1fr;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+nav{
+
+    margin-top:20px;
+
+}
+
+}
